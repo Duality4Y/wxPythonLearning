@@ -13,6 +13,7 @@ class wxSDLWindow(wxFrame):
 		self._resized = 0
 		self._surface = None
 		self.__needsDrawing = 1
+		self.SurfaceSize = None
 		
 		EVT_IDLE(self, self.OnIdle)
 		
@@ -34,8 +35,8 @@ class wxSDLWindow(wxFrame):
 		else:
 			self._resized = 0
 			
-		x,y = self.GetSizeTuple()
-		self._surface = pygame.display.set_mode((x,y))
+		self.SurfaceSize = self.GetSizeTuple()
+		self._surface = pygame.display.set_mode(self.SurfaceSize)
 			
 		if self.__needsDrawing:
 			self.draw()

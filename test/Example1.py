@@ -1,7 +1,7 @@
 
 """
-	the docs are so verry verry handy when trying to decode this code :P
-	http://www.wxpython.org/docs/api/wx.Window-class.html
+	github.com/duality4y
+	
 """
 import wx
 from wxSDLWindow import wxSDLWindow
@@ -10,6 +10,10 @@ import pygame
 #class for drawing a circle in a wxPythonPygame window
 
 class CircleWindow(wxSDLWindow):
+	def process(self):
+		pass
+	def InitUI(self):
+		pass
 	#define a drawing function
 	def draw(self):
 		surface = self.getSurface()
@@ -24,7 +28,7 @@ class CircleWindow(wxSDLWindow):
 def main():
 	app = wx.PySimpleApp()
 	screen_size = (640, 480)
-	window = CircleWindow(None, -1, size=screen_size)
+	window = CircleWindow(None, -1, title = 'sdl window', size=screen_size)
 	window.Show(1)
 	app.MainLoop()
 

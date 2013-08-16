@@ -1,3 +1,4 @@
+
 [indentation]
 indent_width=4
 indent_type=1
@@ -17,10 +18,10 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=927;Python;0;16;1;1;0;%2Fhome%2Frobert%2FwxPythonLearning%2Ftest%2Ftest2.py;0;4
+FILE_NAME_0=449;Python;0;16;1;1;0;/home/robert/wxPythonLearning/Example2.py;0;4
 
 [VTE]
-last_dir=/home/robert/wxPythonLearning/test
+last_dir=/home/robert/wxPythonLearning
 
 [file_prefs]
 final_new_line=true
